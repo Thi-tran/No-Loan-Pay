@@ -3,8 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "css-loader": "^2.1.0",
+    "moment": "2.18.1",
     "react": "^16.8.3",
+    "react-addons-shallow-compare": "^15.6.2",
+    "react-dates": "^12.7.00",
     "react-dom": "^16.8.3",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.5"
   },
   "scripts": {

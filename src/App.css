@@ -1,3 +1,8 @@
+@import './styles/_form.scss';
+@import './styles/_loanBook.scss';
+@import './styles/Grid.css';
+@import './styles/normalize.css';
+
 .App {
   text-align: center;
 }
