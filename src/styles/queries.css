@@ -1,0 +1,7 @@
+@media only screen and (max-width: 767px){
+    .col { width: 100%; 
+        margin: 0 0 4% 0%;}
+    .loan-box{
+        width: auto;
+    }
+}

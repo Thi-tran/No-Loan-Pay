@@ -2,6 +2,10 @@
 @import './styles/_loanBook.scss';
 @import './styles/Grid.css';
 @import './styles/normalize.css';
+@import './styles/queries.css';
+@import './styles/_header.scss';
+
+
 
 .App {
   text-align: center;
@@ -36,3 +40,4 @@
     transform: rotate(360deg);
   }
 }
+
