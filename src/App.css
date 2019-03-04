@@ -5,10 +5,9 @@
 @import './styles/queries.css';
 @import './styles/_header.scss';
 
-
-
 .App {
   text-align: center;
+
 }
 
 .App-logo {
