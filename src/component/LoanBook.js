@@ -1,6 +1,6 @@
 import React from 'react';
 import moment from 'moment';
-
+import {onDelete} from '../action/action';
 
 const LoanBook = ({title, dueDate, note, id, onDelete}) => {
     const dueDateRead = moment(Number(dueDate)).format('MMMM Do, YYYY');
@@ -29,14 +29,17 @@ const LoanBook = ({title, dueDate, note, id, onDelete}) => {
         default: 
             bookIcon = 'icon-green'
     }
-
+    const onHandleDelete = (e) => {
+        e.preventDefault();
+        onDelete(id);
+    }
     return (
         <div>
             <div className="card mx-2 my-2 loan-box">
                 <div className="card-header loan-box-header d-flex justify-content-between">
                     <ion-icon name="book" id={bookIcon}></ion-icon>
                     <h5 className="card-title text-capitalize">{titleChanged}</h5>
-                    <button onClick={() => onDelete(id)}><ion-icon name="trash"></ion-icon></button>
+                    <button onClick={onHandleDelete}><ion-icon name="trash"></ion-icon></button>
                 </div>
                 <div className="card-body">
                     <h5 className="card-text text-capitalize">{title}</h5>
