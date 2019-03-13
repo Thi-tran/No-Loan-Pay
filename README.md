@@ -1,7 +1,7 @@
 
 ## No Loan Pay 
 
-A web that helps to keep up with the due date from borrowed book from the library.
+A web app that helps to keep up with the due date of borrowed book from the library.
 
 Technologies `React` `LocalStorage` `React Hooks` `Router`
 
