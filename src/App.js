@@ -3,7 +3,7 @@ import './App.css';
 
 import LoginPage from './Pages/LoginPage';
 import AppRouter from './router/AppRouter';
-import firebase, { auth, provider } from './firebase';
+import { auth, provider } from './firebase';
 
 // Used for authentication
 export const UserContext = React.createContext();
@@ -42,7 +42,6 @@ class App extends Component {
         this.setState({
           user
         })
-        console.log('loggin success!', result.user);
       })
   }
 

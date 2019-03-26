@@ -2,9 +2,7 @@ import React from 'react';
 import {NavLink} from 'react-router-dom'
 import { UserContext } from '../App'
 const Header = () => {
-    const onClickButton = (e) => {
-        e.preventDefault();
-    }
+
     return (
         <UserContext.Consumer>    
         {({user, logout}) => 

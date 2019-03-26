@@ -7,11 +7,9 @@ const LoanBook = ({title, dueDate, note, id, onDelete}) => {
     const dayLeft = moment(dayLeftFormat, "YYYYMMDD").fromNow('days');
     const today = moment().startOf('day');
     const dayFromNow = Math.round((dueDate-today-1) / 86400000);
-    console.log(dayFromNow);
 
     // set up title 
     let titleChanged = '';
-    console.log(title.length);
     if (title.length > 10){
         titleChanged = title.slice(0,20) + '...';
     } else titleChanged = title;
