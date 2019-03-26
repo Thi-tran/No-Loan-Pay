@@ -2,9 +2,10 @@ import React from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
 import Header from '../component/Header';
-import AddLoanPage from '../component/AddLoanPage';
-import CurrentLoanPage from '../component/CurrentLoanPage';
-import NotFoundPage from '../component/NotFoundPage';
+import AddLoanPage from '../Pages/AddLoanPage';
+import CurrentLoanPage from '../Pages/CurrentLoanPage';
+import NotFoundPage from '../Pages/NotFoundPage';
+
 const AppRouter = () => (
     <BrowserRouter>
         <div className="App">

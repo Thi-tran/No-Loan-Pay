@@ -1,6 +1,5 @@
 import React from 'react';
 import moment from 'moment';
-import {onDelete} from '../action/action';
 
 const LoanBook = ({title, dueDate, note, id, onDelete}) => {
     const dueDateRead = moment(Number(dueDate)).format('MMMM Do, YYYY');
@@ -13,7 +12,7 @@ const LoanBook = ({title, dueDate, note, id, onDelete}) => {
     // set up title 
     let titleChanged = '';
     console.log(title.length);
-    if (title.length > 16){
+    if (title.length > 10){
         titleChanged = title.slice(0,20) + '...';
     } else titleChanged = title;
 
@@ -24,7 +23,7 @@ const LoanBook = ({title, dueDate, note, id, onDelete}) => {
             bookIcon = 'icon-red'
             break;
         case (dayFromNow < 4): 
-            bookIcon = 'icon-yellow'
+            bookIcon = 'icon-red'
             break;
         default: 
             bookIcon = 'icon-green'
